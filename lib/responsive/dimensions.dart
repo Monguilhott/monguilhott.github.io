@@ -1,2 +1,1 @@
-
 const mobileWidth = 600;
