@@ -10,10 +10,10 @@ class MyDesktopBody extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Desktop'),
       ),
-      body: Center(
-        child: SingleChildScrollView(
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Center(
             child: SizedBox(
               width: 1000,
               child: Column(
