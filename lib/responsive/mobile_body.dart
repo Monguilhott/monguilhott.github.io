@@ -28,7 +28,7 @@ class MyMobileBody extends StatelessWidget {
                 ),
               ),
               const Padding(
-                padding: EdgeInsets.only(top: 8.0),
+                padding: EdgeInsets.only(top: 8.0, bottom: 8.0),
                 child: Text(
                   'description',
                   style: TextStyle(
@@ -37,16 +37,10 @@ class MyMobileBody extends StatelessWidget {
                   ),
                 ),
               ),
+              Image.asset('assets/xmas01.gif'),
               Padding(
                 padding: const EdgeInsets.only(top: 8.0),
-                child: Image.asset('assets/xmas01.gif'),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 8.0),
-                child: Container(
-                  height: 250,
-                  color: Colors.deepPurple[600],
-                ),
+                child: Image.asset('assets/xmas02.png'),
               ),
               const Padding(
                 padding: EdgeInsets.only(top: 28.0),
@@ -59,7 +53,7 @@ class MyMobileBody extends StatelessWidget {
                 ),
               ),
               const Padding(
-                padding: EdgeInsets.only(top: 8.0),
+                padding: EdgeInsets.only(top: 8.0, bottom: 8.0),
                 child: Text(
                   'description',
                   style: TextStyle(
@@ -68,12 +62,9 @@ class MyMobileBody extends StatelessWidget {
                   ),
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.only(top: 8.0),
-                child: Container(
-                  height: 250,
-                  color: Colors.deepPurple[400],
-                ),
+              Container(
+                height: 250,
+                color: Colors.deepPurple[600],
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 8.0),
@@ -93,7 +84,7 @@ class MyMobileBody extends StatelessWidget {
                 ),
               ),
               const Padding(
-                padding: EdgeInsets.only(top: 8.0),
+                padding: EdgeInsets.only(top: 8.0, bottom: 8.0),
                 child: Text(
                   'Since 2015, Ive been working with Unity 3D. Over this time, Ive developed strong skills and been part of various projects, spanning both 2D and 3D development, as well as Virtual Reality (VR) experiences.',
                   style: TextStyle(
@@ -102,10 +93,7 @@ class MyMobileBody extends StatelessWidget {
                   ),
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.only(top: 8.0),
-                child: Image.asset('assets/unity01.gif'),
-              ),
+              Image.asset('assets/unity01.gif'),
               Padding(
                 padding: const EdgeInsets.only(top: 8.0),
                 child: Image.asset('assets/unity02.gif'),
