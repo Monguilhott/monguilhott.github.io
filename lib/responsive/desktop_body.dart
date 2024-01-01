@@ -56,7 +56,7 @@ class MyDesktopBody extends StatelessWidget {
                     ],
                   ),
                   const Padding(
-                    padding: EdgeInsets.only(top: 28.0),
+                    padding: EdgeInsets.only(top: 32.0),
                     child: Text(
                       'Splashscreen WorldCup',
                       style: TextStyle(
@@ -91,7 +91,42 @@ class MyDesktopBody extends StatelessWidget {
                     ],
                   ),
                   const Padding(
-                    padding: EdgeInsets.only(top: 28.0),
+                    padding: EdgeInsets.only(top: 32.0),
+                    child: Text(
+                      'Dialog Animations',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.only(top: 4.0, bottom: 8.0),
+                    child: Text(
+                      'description',
+                      style: TextStyle(
+                        color: Colors.white54,
+                        fontSize: 14,
+                      ),
+                    ),
+                  ),
+                  Row(
+                    children: [
+                      Expanded(
+                        flex: 25,
+                        child: Image.asset('assets/dialog01.gif',
+                            fit: BoxFit.fitHeight),
+                      ),
+                      const SizedBox(width: 8),
+                      Expanded(
+                        flex: 25,
+                        child: Image.asset('assets/dialog02.gif',
+                            fit: BoxFit.fitHeight),
+                      ),
+                    ],
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.only(top: 32.0),
                     child: Text(
                       '2D Art',
                       style: TextStyle(
@@ -142,7 +177,7 @@ class MyDesktopBody extends StatelessWidget {
                     ],
                   ),
                   const Padding(
-                    padding: EdgeInsets.only(top: 28.0),
+                    padding: EdgeInsets.only(top: 32.0),
                     child: Text(
                       '3D Art',
                       style: TextStyle(
@@ -161,23 +196,43 @@ class MyDesktopBody extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Row(
+                  Column(
                     children: [
-                      Expanded(
-                        flex: 25,
-                        child: Image.asset('assets/house.gif',
-                            fit: BoxFit.fitHeight),
+                      Row(
+                        children: [
+                          Expanded(
+                            flex: 25,
+                            child: Image.asset('assets/house.gif',
+                                fit: BoxFit.fitHeight),
+                          ),
+                          const SizedBox(width: 8),
+                          Expanded(
+                            flex: 32,
+                            child: Image.asset('assets/packs.gif',
+                                fit: BoxFit.fitHeight),
+                          ),
+                        ],
                       ),
-                      const SizedBox(width: 8),
-                      Expanded(
-                        flex: 32,
-                        child: Image.asset('assets/packs.gif',
-                            fit: BoxFit.fitHeight),
+                      const SizedBox(height: 8),
+                      Row(
+                        children: [
+                          Expanded(
+                            flex: 32,
+                            child: Image.asset('assets/suitcase.jpg',
+                                fit: BoxFit.fitHeight),
+                          ),
+                          const SizedBox(width: 8),
+                          Expanded(
+                            flex: 20,
+                            child: Image.asset('assets/militar.png',
+                                fit: BoxFit.fitHeight),
+                          ),
+                        ],
                       ),
                     ],
                   ),
                   const Padding(
-                    padding: EdgeInsets.only(top: 28.0),
+                    padding: EdgeInsets.only(top: 32.0),
                     child: Text(
                       'Unity 3D',
                       style: TextStyle(
