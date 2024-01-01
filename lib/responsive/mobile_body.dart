@@ -20,7 +20,7 @@ class MyMobileBody extends StatelessWidget {
               const Padding(
                 padding: EdgeInsets.only(top: 8.0),
                 child: Text(
-                  'Title',
+                  'Splashscreen Christmas',
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 24,
@@ -45,7 +45,7 @@ class MyMobileBody extends StatelessWidget {
               const Padding(
                 padding: EdgeInsets.only(top: 28.0),
                 child: Text(
-                  'Title',
+                  'Splashscreen WorldCup',
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 24,
@@ -62,16 +62,43 @@ class MyMobileBody extends StatelessWidget {
                   ),
                 ),
               ),
-              Container(
-                height: 250,
-                color: Colors.deepPurple[600],
+              Image.asset('assets/world01.gif'),
+              Padding(
+                padding: const EdgeInsets.only(top: 8.0),
+                child: Image.asset('assets/world02.png'),
+              ),
+              const Padding(
+                padding: EdgeInsets.only(top: 28.0),
+                child: Text(
+                  '2D art',
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold),
+                ),
+              ),
+              const Padding(
+                padding: EdgeInsets.only(top: 8.0, bottom: 8.0),
+                child: Text(
+                  'description',
+                  style: TextStyle(
+                    color: Colors.white54,
+                    fontSize: 14,
+                  ),
+                ),
+              ),
+              Image.asset('assets/sketch.jpg'),
+              Padding(
+                padding: const EdgeInsets.only(top: 8.0),
+                child: Image.asset('assets/harry.jpg'),
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 8.0),
-                child: Container(
-                  height: 250,
-                  color: Colors.deepPurple[600],
-                ),
+                child: Image.asset('assets/girl01.jpg'),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 8.0),
+                child: Image.asset('assets/mermaid.jpg'),
               ),
               const Padding(
                 padding: EdgeInsets.only(top: 28.0),

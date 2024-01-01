@@ -23,7 +23,7 @@ class MyDesktopBody extends StatelessWidget {
                   const Padding(
                     padding: EdgeInsets.only(top: 8.0),
                     child: Text(
-                      'Title',
+                      'Splashscreen Christmas',
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 24,
@@ -58,7 +58,7 @@ class MyDesktopBody extends StatelessWidget {
                   const Padding(
                     padding: EdgeInsets.only(top: 28.0),
                     child: Text(
-                      'Title',
+                      'Splashscreen WorldCup',
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 24,
@@ -78,24 +78,73 @@ class MyDesktopBody extends StatelessWidget {
                   Row(
                     children: [
                       Expanded(
-                        child: Container(
-                          height: 250,
-                          color: Colors.deepPurple[600],
-                        ),
+                        flex: 25,
+                        child: Image.asset('assets/world01.gif',
+                            fit: BoxFit.fitHeight),
                       ),
                       const SizedBox(width: 8),
                       Expanded(
-                        child: Container(
-                          height: 250,
-                          color: Colors.deepPurple[600],
-                        ),
+                        flex: 38,
+                        child: Image.asset('assets/world02.png',
+                            fit: BoxFit.fitHeight),
                       ),
                     ],
                   ),
                   const Padding(
                     padding: EdgeInsets.only(top: 28.0),
                     child: Text(
-                      'Title',
+                      '2D Art',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.only(top: 8.0, bottom: 8.0),
+                    child: Text(
+                      'description',
+                      style: TextStyle(
+                        color: Colors.white54,
+                        fontSize: 14,
+                      ),
+                    ),
+                  ),
+                  Column(
+                    children: [
+                      Row(
+                        children: [
+                          Expanded(
+                            child: Image.asset('assets/sketch.jpg',
+                                fit: BoxFit.fitHeight),
+                          ),
+                          const SizedBox(width: 8),
+                          Expanded(
+                            child: Image.asset('assets/harry.jpg',
+                                fit: BoxFit.fitHeight),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 8),
+                      Row(
+                        children: [
+                          Expanded(
+                            child: Image.asset('assets/girl01.jpg',
+                                fit: BoxFit.fitHeight),
+                          ),
+                          const SizedBox(width: 8),
+                          Expanded(
+                            child: Image.asset('assets/mermaid.jpg',
+                                fit: BoxFit.fitHeight),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.only(top: 28.0),
+                    child: Text(
+                      'Unity 3D',
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 24,
