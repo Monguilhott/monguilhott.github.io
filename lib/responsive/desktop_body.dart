@@ -46,7 +46,7 @@ class MyDesktopBody extends StatelessWidget {
                         children: [
                           Expanded(
                             flex: 2,
-                            child: Image.asset('assets/xmas01.gif',
+                            child: Image.asset('assets/xmas01.webp',
                                 fit: BoxFit.fitHeight),
                           ),
                           const SizedBox(width: 8),
@@ -96,7 +96,7 @@ class MyDesktopBody extends StatelessWidget {
                         children: [
                           Expanded(
                             flex: 25,
-                            child: Image.asset('assets/world01.gif',
+                            child: Image.asset('assets/world01.webp',
                                 fit: BoxFit.fitHeight),
                           ),
                           const SizedBox(width: 8),

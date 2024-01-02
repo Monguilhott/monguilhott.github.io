@@ -41,7 +41,7 @@ class MyMobileBody extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Image.asset('assets/xmas01.gif'),
+                    Image.asset('assets/xmas01.webp'),
                     Padding(
                       padding: const EdgeInsets.only(top: 8.0),
                       child: Image.asset('assets/xmas02.jpg'),
@@ -79,7 +79,7 @@ class MyMobileBody extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Image.asset('assets/world01.gif'),
+                    Image.asset('assets/world01.webp'),
                     Padding(
                       padding: const EdgeInsets.only(top: 8.0),
                       child: Image.asset('assets/world02.jpg'),
