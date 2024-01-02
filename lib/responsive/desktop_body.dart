@@ -264,13 +264,13 @@ class MyDesktopBody extends StatelessWidget {
                             children: [
                               Expanded(
                                 flex: 25,
-                                child: Image.asset('assets/house.gif',
+                                child: Image.asset('assets/house.webp',
                                     fit: BoxFit.fitHeight),
                               ),
                               const SizedBox(width: 8),
                               Expanded(
                                 flex: 32,
-                                child: Image.asset('assets/packs.gif',
+                                child: Image.asset('assets/packs.webp',
                                     fit: BoxFit.fitHeight),
                               ),
                             ],
@@ -332,12 +332,12 @@ class MyDesktopBody extends StatelessWidget {
                         children: [
                           Expanded(
                             flex: 4,
-                            child: Image.asset('assets/unity01.gif', width: 430,),
+                            child: Image.asset('assets/unity01.webp', width: 430,),
                           ),
                           const SizedBox(width: 8),
                           Expanded(
                             flex: 5,
-                            child: Image.asset('assets/unity02.gif', width: 540,),
+                            child: Image.asset('assets/unity02.webp', width: 540,),
                           ),
                         ],
                       ),
