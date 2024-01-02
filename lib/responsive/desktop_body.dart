@@ -45,13 +45,13 @@ class MyDesktopBody extends StatelessWidget {
                       Row(
                         children: [
                           Expanded(
-                            flex: 2,
+                            flex: 25,
                             child: Image.asset('assets/xmas01.webp',
                                 fit: BoxFit.fitHeight),
                           ),
                           const SizedBox(width: 8),
                           Expanded(
-                            flex: 1,
+                            flex: 13,
                             child: Image.asset('assets/xmas02.jpg',
                                 fit: BoxFit.fitHeight),
                           ),
@@ -101,7 +101,7 @@ class MyDesktopBody extends StatelessWidget {
                           ),
                           const SizedBox(width: 8),
                           Expanded(
-                            flex: 38,
+                            flex: 39,
                             child: Image.asset('assets/world02.jpg',
                                 fit: BoxFit.fitHeight),
                           ),
