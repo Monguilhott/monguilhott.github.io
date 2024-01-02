@@ -7,9 +7,6 @@ class MyMobileBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black87,
-      appBar: AppBar(
-        title: const Text('Mobile'),
-      ),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -22,7 +19,7 @@ class MyMobileBody extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Padding(
-                      padding: EdgeInsets.only(top: 8.0),
+                      padding: EdgeInsets.only(top: 16.0),
                       child: Text(
                         'Splashscreen Christmas',
                         style: TextStyle(
