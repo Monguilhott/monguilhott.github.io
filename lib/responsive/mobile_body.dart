@@ -44,7 +44,7 @@ class MyMobileBody extends StatelessWidget {
                     Image.asset('assets/xmas01.gif'),
                     Padding(
                       padding: const EdgeInsets.only(top: 8.0),
-                      child: Image.asset('assets/xmas02.png'),
+                      child: Image.asset('assets/xmas02.jpg'),
                     ),
                     const SizedBox(height: 48),
                   ],
@@ -82,7 +82,7 @@ class MyMobileBody extends StatelessWidget {
                     Image.asset('assets/world01.gif'),
                     Padding(
                       padding: const EdgeInsets.only(top: 8.0),
-                      child: Image.asset('assets/world02.png'),
+                      child: Image.asset('assets/world02.jpg'),
                     ),
                     const SizedBox(height: 48),
                   ],
@@ -212,7 +212,7 @@ class MyMobileBody extends StatelessWidget {
                     ),
                     Padding(
                       padding: const EdgeInsets.only(top: 8.0),
-                      child: Image.asset('assets/militar.png'),
+                      child: Image.asset('assets/militar.jpg'),
                     ),
                     const SizedBox(height: 48),
                   ],
