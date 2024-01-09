@@ -248,7 +248,7 @@ class MyDesktopBody extends StatelessWidget {
                       const Padding(
                         padding: EdgeInsets.only(top: 4.0, bottom: 8.0),
                         child: Text(
-                          '3D models created in Blender.',
+                          '3D assets created in Blender.',
                           style: TextStyle(
                             color: Colors.white54,
                             fontSize: 16,
@@ -318,7 +318,7 @@ class MyDesktopBody extends StatelessWidget {
                       const Padding(
                         padding: EdgeInsets.only(top: 4.0, bottom: 8.0),
                         child: Text(
-                          'Since 2015, I\'ve been working with Unity 3D. Over this time, I\'ve developed strong skills and been part of various projects, spanning both 2D and 3D development, as well as Virtual Reality (VR) experiences.',
+                          'I\'ve been working with Unity 3D since 2015. Through this time I\'ve developed my skills and have been part of various projects working with both 2D and 3D as well as Virtual Reality (VR).',
                           style: TextStyle(
                             color: Colors.white54,
                             fontSize: 16,
@@ -339,6 +339,30 @@ class MyDesktopBody extends StatelessWidget {
                         ],
                       ),
                       const SizedBox(height: 48),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Container(
+              color: Colors.black87,
+              child: const Center(
+                child: SizedBox(
+                  width: 1000,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.only(top: 48.0, bottom: 48.0),
+                        child: Text(
+                          'Thanks for watching! feel free to reach out at m.monguilhott@gmail.com ✌',
+                          style: TextStyle(
+                            color: Colors.white54,
+                            fontSize: 16,
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 ),
