@@ -18,7 +18,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "5d3048373b3eb1d9d8659d91395a77f0
 "assets/assets/unity01.webp": "768ba84ec156e174f163868142d0c835",
 "assets/assets/unity02.webp": "3b05dc589e49254120d5b89ba0cdd27f",
 "assets/assets/world01.webp": "7bc1684453626c96c71a156b915bf6f8",
-"assets/assets/world02.jpg": "3a12e0d35f32341e820a378b06240937",
+"assets/assets/world02.jpg": "ab139f7cd32d465f5d0e6e4f10ec518a",
 "assets/assets/xmas01.webp": "24784629329bea77316c8972f8db1f6a",
 "assets/assets/xmas02.jpg": "89a172c91f1dbe3d99c1785870add212",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
@@ -40,9 +40,9 @@ const RESOURCES = {"assets/AssetManifest.bin": "5d3048373b3eb1d9d8659d91395a77f0
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "0e2f55b539c3889d23c3aaefbd5a3767",
-"/": "0e2f55b539c3889d23c3aaefbd5a3767",
-"main.dart.js": "e8eb14cecfdb1e45cf9b3f1ae298454a",
+"index.html": "79c9625f03c3c5c2cf7fa43729050eab",
+"/": "79c9625f03c3c5c2cf7fa43729050eab",
+"main.dart.js": "dff7071c35211035937f8e114c36edc7",
 "manifest.json": "e74af8957b5899dc6da961caee768ec9",
 "version.json": "009c9e65172e010890f7f65fde438006"};
 // The application shell files that are downloaded before a service worker can
