@@ -13,7 +13,7 @@ class MyMobileBody extends StatelessWidget {
             Container(
               color: Colors.black87,
               child: Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(16.0),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -51,7 +51,7 @@ class MyMobileBody extends StatelessWidget {
             Container(
               color: Colors.black54,
               child: Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(16.0),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -89,7 +89,7 @@ class MyMobileBody extends StatelessWidget {
             Container(
               color: Colors.black87,
               child: Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(16.0),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -127,7 +127,7 @@ class MyMobileBody extends StatelessWidget {
             Container(
               color: Colors.black54,
               child: Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(16.0),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -173,7 +173,7 @@ class MyMobileBody extends StatelessWidget {
             Container(
               color: Colors.black87,
               child: Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(16.0),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -219,7 +219,7 @@ class MyMobileBody extends StatelessWidget {
             Container(
               color: Colors.black54,
               child: Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(16.0),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -257,7 +257,7 @@ class MyMobileBody extends StatelessWidget {
             Container(
               color: Colors.black87,
               child: const Padding(
-                padding: EdgeInsets.all(8.0),
+                padding: EdgeInsets.all(16.0),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
