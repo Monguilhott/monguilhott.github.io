@@ -32,10 +32,10 @@ class MyDesktopBody extends StatelessWidget {
                       const Padding(
                         padding: EdgeInsets.only(top: 4.0, bottom: 8.0),
                         child: Text(
-                          'description',
+                          'Artwork designed in Adobe Illustrator and animated using Adobe Animate for the Gamevelvet app\'s splash screen, featuring a festive Christmas theme.',
                           style: TextStyle(
                             color: Colors.white54,
-                            fontSize: 14,
+                            fontSize: 16,
                           ),
                         ),
                       ),
@@ -82,10 +82,10 @@ class MyDesktopBody extends StatelessWidget {
                       const Padding(
                         padding: EdgeInsets.only(top: 4.0, bottom: 8.0),
                         child: Text(
-                          'description',
+                          'Artwork designed in Adobe Illustrator and animated using Adobe Animate for the 2022 World Cup-themed splash screen of the Gamevelvet app.',
                           style: TextStyle(
                             color: Colors.white54,
-                            fontSize: 14,
+                            fontSize: 16,
                           ),
                         ),
                       ),
@@ -132,10 +132,10 @@ class MyDesktopBody extends StatelessWidget {
                       const Padding(
                         padding: EdgeInsets.only(top: 4.0, bottom: 8.0),
                         child: Text(
-                          'description',
+                          'Artwork created in Adobe Illustrator and animation crafted in Adobe Animate for the Gamevelvet app\'s splash screen, designed for two dialogues.',
                           style: TextStyle(
                             color: Colors.white54,
-                            fontSize: 14,
+                            fontSize: 16,
                           ),
                         ),
                       ),
@@ -182,10 +182,10 @@ class MyDesktopBody extends StatelessWidget {
                       const Padding(
                         padding: EdgeInsets.only(top: 4.0, bottom: 8.0),
                         child: Text(
-                          'description',
+                          'Illustrations created in Adobe Photoshop and Infinite Studio.',
                           style: TextStyle(
                             color: Colors.white54,
-                            fontSize: 14,
+                            fontSize: 16,
                           ),
                         ),
                       ),
@@ -248,10 +248,10 @@ class MyDesktopBody extends StatelessWidget {
                       const Padding(
                         padding: EdgeInsets.only(top: 4.0, bottom: 8.0),
                         child: Text(
-                          'description',
+                          '3D models created in Blender.',
                           style: TextStyle(
                             color: Colors.white54,
-                            fontSize: 14,
+                            fontSize: 16,
                           ),
                         ),
                       ),
@@ -318,10 +318,10 @@ class MyDesktopBody extends StatelessWidget {
                       const Padding(
                         padding: EdgeInsets.only(top: 4.0, bottom: 8.0),
                         child: Text(
-                          'Since 2015, Ive been working with Unity 3D. Over this time, Ive developed strong skills and been part of various projects, spanning both 2D and 3D development, as well as Virtual Reality (VR) experiences.',
+                          'Since 2015, I\'ve been working with Unity 3D. Over this time, I\'ve developed strong skills and been part of various projects, spanning both 2D and 3D development, as well as Virtual Reality (VR) experiences.',
                           style: TextStyle(
                             color: Colors.white54,
-                            fontSize: 14,
+                            fontSize: 16,
                           ),
                         ),
                       ),
