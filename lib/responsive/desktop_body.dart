@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../custom_appbar.dart';
 
 class MyDesktopBody extends StatelessWidget {
   const MyDesktopBody({super.key});
@@ -6,6 +7,7 @@ class MyDesktopBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: const MyAppBar(),
       backgroundColor: Colors.black87,
       body: SingleChildScrollView(
         child: Column(
@@ -350,8 +352,7 @@ class MyDesktopBody extends StatelessWidget {
                 child: SizedBox(
                   width: 1000,
                   child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Padding(
                         padding: EdgeInsets.only(top: 48.0, bottom: 48.0),
