@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
   final Function(String) onCategorySelected;
@@ -26,7 +27,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
               padding: const EdgeInsets.only(left: 16.0, top: 8.0, bottom: 8.0),
               child: ElevatedButton(
                 onPressed: () {
-
+                  _launchURL();
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.blue,
@@ -57,4 +58,13 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Size get preferredSize => const Size(200, kToolbarHeight);
+
+  _launchURL() async {
+    final Uri uri = Uri.parse('https://drive.google.com/file/d/1wy0xZO7mNR6r1AxEz4-EOuoqOZqIHtFR/view?usp=sharing');
+    if (await canLaunchUrl(uri)) {
+      await launchUrl(uri);
+    } else {
+      throw 'Não foi possível abrir a URL: $uri';
+    }
+  }
 }

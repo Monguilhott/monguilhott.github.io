@@ -9,27 +9,27 @@ class MyDesktopBody extends StatefulWidget {
 }
 
 class MyDesktopBodyState extends State<MyDesktopBody> {
-  final ScrollController _scrollController = ScrollController();
+  final ScrollController scrollController = ScrollController();
 
   void _scrollToCategory(String category) {
     switch (category) {
       case 'splash christmas':
-        _scrollController.animateTo(0, duration: const Duration(seconds: 1), curve: Curves.easeInOut);
+        scrollController.animateTo(0, duration: const Duration(seconds: 1), curve: Curves.easeInOut);
         break;
       case 'splashscreen worldcup':
-        _scrollController.animateTo(540, duration: const Duration(seconds: 1), curve: Curves.easeInOut);
+        scrollController.animateTo(540, duration: const Duration(seconds: 1), curve: Curves.easeInOut);
         break;
       case 'dialog animations':
-        _scrollController.animateTo(1430, duration: const Duration(seconds: 1), curve: Curves.easeInOut);
+        scrollController.animateTo(1430, duration: const Duration(seconds: 1), curve: Curves.easeInOut);
         break;
       case '2d art':
-        _scrollController.animateTo(2145, duration: const Duration(seconds: 1), curve: Curves.easeInOut);
+        scrollController.animateTo(2145, duration: const Duration(seconds: 1), curve: Curves.easeInOut);
         break;
       case '3d art':
-        _scrollController.animateTo(3300, duration: const Duration(seconds: 1), curve: Curves.easeInOut);
+        scrollController.animateTo(3300, duration: const Duration(seconds: 1), curve: Curves.easeInOut);
         break;
       case 'unity3d':
-        _scrollController.animateTo(5000, duration: const Duration(seconds: 1), curve: Curves.easeInOut);
+        scrollController.animateTo(5000, duration: const Duration(seconds: 1), curve: Curves.easeInOut);
         break;
     }
   }
@@ -40,7 +40,7 @@ class MyDesktopBodyState extends State<MyDesktopBody> {
       appBar: MyAppBar(onCategorySelected: _scrollToCategory),
       backgroundColor: Colors.black87,
       body: SingleChildScrollView(
-        controller: _scrollController,
+        controller: scrollController,
         child: Column(
           children: [
             Container(
