@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
-  const MyAppBar({Key? key}) : super(key: key);
+  final Function(String) onCategorySelected;
+
+  const MyAppBar({Key? key, required this.onCategorySelected}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -11,95 +13,44 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
         alignment: Alignment.center,
         width: 1000,
         height: kToolbarHeight,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                child: TextButton(
-                  onPressed: () {
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            buildCategoryButton('Christmas', 'splash christmas'),
+            buildCategoryButton('WorldCup', 'splashscreen worldcup'),
+            buildCategoryButton('Dialogs', 'dialog animations'),
+            buildCategoryButton('2D Arts', '2d art'),
+            buildCategoryButton('3D Arts', '3d art'),
+            buildCategoryButton('Unity 3D', 'unity3d'),
+            Padding(
+              padding: const EdgeInsets.only(left: 16.0, top: 8.0, bottom: 8.0),
+              child: ElevatedButton(
+                onPressed: () {
 
-                  },
-                  child: const Text(
-                    'Christmas',
-                    style: TextStyle(color: Colors.white),
-                  ),
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blue,
                 ),
+                child: const Text('Resume'),
               ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                child: TextButton(
-                  onPressed: () {
+            ),
+          ],
+        ),
+      ),
+    );
+  }
 
-                  },
-                  child: const Text(
-                    'WorldCup',
-                    style: TextStyle(color: Colors.white),
-                  ),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                child: TextButton(
-                  onPressed: () {
-
-                  },
-                  child: const Text(
-                    'Dialogs',
-                    style: TextStyle(color: Colors.white),
-                  ),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                child: TextButton(
-                  onPressed: () {
-
-                  },
-                  child: const Text(
-                    '2D Arts',
-                    style: TextStyle(color: Colors.white),
-                  ),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                child: TextButton(
-                  onPressed: () {
-
-                  },
-                  child: const Text(
-                    '3D Arts',
-                    style: TextStyle(color: Colors.white),
-                  ),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                child: TextButton(
-                  onPressed: () {
-
-                  },
-                  child: const Text(
-                    'Unity 3D',
-                    style: TextStyle(color: Colors.white),
-                  ),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(left: 16.0, top: 8.0, bottom: 8.0),
-                child: ElevatedButton(
-                  onPressed: () {
-
-                  },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue,
-                  ),
-                  child: const Text('Resume'),
-                ),
-              ),
-            ],
-          ),
+  Widget buildCategoryButton(String text, String category) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16.0),
+      child: TextButton(
+        onPressed: () {
+          onCategorySelected(category);
+        },
+        child: Text(
+          text,
+          style: const TextStyle(color: Colors.white),
+        ),
       ),
     );
   }

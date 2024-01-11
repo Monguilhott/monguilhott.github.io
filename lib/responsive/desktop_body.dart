@@ -1,15 +1,46 @@
 import 'package:flutter/material.dart';
 import '../custom_appbar.dart';
 
-class MyDesktopBody extends StatelessWidget {
-  const MyDesktopBody({super.key});
+class MyDesktopBody extends StatefulWidget {
+  const MyDesktopBody({Key? key}) : super(key: key);
+
+  @override
+  MyDesktopBodyState createState() => MyDesktopBodyState();
+}
+
+class MyDesktopBodyState extends State<MyDesktopBody> {
+  final ScrollController _scrollController = ScrollController();
+
+  void _scrollToCategory(String category) {
+    switch (category) {
+      case 'splash christmas':
+        _scrollController.animateTo(0, duration: const Duration(seconds: 1), curve: Curves.easeInOut);
+        break;
+      case 'splashscreen worldcup':
+        _scrollController.animateTo(540, duration: const Duration(seconds: 1), curve: Curves.easeInOut);
+        break;
+      case 'dialog animations':
+        _scrollController.animateTo(1430, duration: const Duration(seconds: 1), curve: Curves.easeInOut);
+        break;
+      case '2d art':
+        _scrollController.animateTo(2145, duration: const Duration(seconds: 1), curve: Curves.easeInOut);
+        break;
+      case '3d art':
+        _scrollController.animateTo(3300, duration: const Duration(seconds: 1), curve: Curves.easeInOut);
+        break;
+      case 'unity3d':
+        _scrollController.animateTo(5000, duration: const Duration(seconds: 1), curve: Curves.easeInOut);
+        break;
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const MyAppBar(),
+      appBar: MyAppBar(onCategorySelected: _scrollToCategory),
       backgroundColor: Colors.black87,
       body: SingleChildScrollView(
+        controller: _scrollController,
         child: Column(
           children: [
             Container(
