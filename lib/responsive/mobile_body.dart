@@ -211,6 +211,10 @@ class MyMobileBody extends StatelessWidget {
                       padding: const EdgeInsets.only(top: 8.0),
                       child: Image.asset('assets/militar.jpg'),
                     ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 8.0),
+                      child: Image.asset('assets/chest.jpg'),
+                    ),
                     const SizedBox(height: 48),
                   ],
                 ),
