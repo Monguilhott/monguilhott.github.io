@@ -317,13 +317,13 @@ class MyDesktopBodyState extends State<MyDesktopBody> {
                               Expanded(
                                 flex: 20,
                                 child: Image.asset('assets/militar.jpg',
-                                    fit: BoxFit.fitHeight),
+                                    fit: BoxFit.fitWidth),
                               ),
                             ],
                           ),
                           Padding(
                             padding: const EdgeInsets.only(top: 8.0),
-                            child: Image.asset('assets/chest.jpg'),
+                            child: Image.asset('assets/chest.jpg',)
                           ),
                           const SizedBox(height: 48),
                         ],
