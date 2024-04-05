@@ -26,10 +26,10 @@ class MyDesktopBodyState extends State<MyDesktopBody> {
         scrollController.animateTo(2145, duration: const Duration(seconds: 1), curve: Curves.easeInOut);
         break;
       case '3d art':
-        scrollController.animateTo(3300, duration: const Duration(seconds: 1), curve: Curves.easeInOut);
+        scrollController.animateTo(3860, duration: const Duration(seconds: 1), curve: Curves.easeInOut);
         break;
       case 'unity3d':
-        scrollController.animateTo(5000, duration: const Duration(seconds: 1), curve: Curves.easeInOut);
+        scrollController.animateTo(6000, duration: const Duration(seconds: 1), curve: Curves.easeInOut);
         break;
     }
   }
