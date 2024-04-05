@@ -58587,9 +58587,9 @@ case"dialog animations":s.d.d9(1430,B.aZ,B.as)
 break
 case"2d art":s.d.d9(2145,B.aZ,B.as)
 break
-case"3d art":s.d.d9(3300,B.aZ,B.as)
+case"3d art":s.d.d9(3860,B.aZ,B.as)
 break
-case"unity3d":s.d.d9(5000,B.aZ,B.as)
+case"unity3d":s.d.d9(6000,B.aZ,B.as)
 break}},
 S(a){var s=null,r=1000,q=t.W
 return A.a9K(new A.Bk(this.gU_(),s),B.o,A.a9T(A.dz(A.a([A.dA(s,A.kz(A.jO(A.dz(A.a([B.Dv,B.ov,A.ih(A.a([A.dD(A.bf("assets/xmas01.webp",B.a1,s),25),B.b7,A.dD(A.bf("assets/xmas02.jpg",B.a1,s),13)],q),B.A,B.a6),B.aj],q),B.V,B.A),s,r),s,s),B.o,s,s,s,s,s),A.dA(s,A.kz(A.jO(A.dz(A.a([B.Dk,B.ot,A.ih(A.a([A.dD(A.bf("assets/world01.webp",B.a1,s),25),B.b7,A.dD(A.bf("assets/world02.jpg",B.a1,s),39)],q),B.A,B.a6),B.aj],q),B.V,B.A),s,r),s,s),B.p,s,s,s,s,s),A.dA(s,A.kz(A.jO(A.dz(A.a([B.Ds,B.ow,A.ih(A.a([A.dD(A.bf("assets/dialog01.gif",B.a1,s),25),B.b7,A.dD(A.bf("assets/dialog02.gif",B.a1,s),25)],q),B.A,B.a6),B.aj],q),B.V,B.A),s,r),s,s),B.o,s,s,s,s,s),A.dA(s,A.kz(A.jO(A.dz(A.a([B.Dx,B.ou,A.dz(A.a([A.ih(A.a([A.dD(A.bf("assets/sketch.jpg",B.a1,s),1),B.b7,A.dD(A.bf("assets/harry.jpg",B.a1,s),1)],q),B.A,B.a6),B.u5,A.ih(A.a([A.dD(A.bf("assets/girl01.jpg",B.a1,s),1),B.b7,A.dD(A.bf("assets/mermaid.jpg",B.a1,s),1)],q),B.A,B.a6),new A.aK(B.O,A.bf("assets/vectors.jpg",s,s),s),B.aj],q),B.bC,B.A)],q),B.V,B.A),s,r),s,s),B.p,s,s,s,s,s),A.dA(s,A.kz(A.jO(A.dz(A.a([B.Dq,B.ox,A.dz(A.a([A.ih(A.a([A.dD(A.bf("assets/house.webp",B.a1,s),25),B.b7,A.dD(A.bf("assets/packs.webp",B.a1,s),32)],q),B.A,B.a6),B.u5,A.ih(A.a([A.dD(A.bf("assets/suitcase.jpg",B.a1,s),32),B.b7,A.dD(A.bf("assets/militar.jpg",B.vm,s),20)],q),B.A,B.a6),new A.aK(B.O,A.bf("assets/chest.jpg",s,s),s),new A.aK(B.O,A.bf("assets/snooker.gif",s,s),s),B.aj],q),B.bC,B.A)],q),B.V,B.A),s,r),s,s),B.o,s,s,s,s,s),A.dA(s,A.kz(A.jO(A.dz(A.a([B.Dn,B.oy,A.ih(A.a([A.dD(A.bf("assets/unity01.webp",s,430),4),B.b7,A.dD(A.bf("assets/unity02.webp",s,540),5)],q),B.A,B.a6),B.aj],q),B.V,B.A),s,r),s,s),B.p,s,s,s,s,s),A.dA(s,B.wG,B.o,s,s,s,s,s)],q),B.bC,B.A),this.d))}}
