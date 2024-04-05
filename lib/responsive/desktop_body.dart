@@ -251,6 +251,10 @@ class MyDesktopBodyState extends State<MyDesktopBody> {
                               ),
                             ],
                           ),
+                          Padding(
+                              padding: const EdgeInsets.only(top: 8.0),
+                              child: Image.asset('assets/vectors.jpg',)
+                          ),
                           const SizedBox(height: 48),
                         ],
                       ),

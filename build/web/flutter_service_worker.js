@@ -3,8 +3,8 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"assets/AssetManifest.bin": "2ef310adab159aa58a1e0dc22485ff16",
-"assets/AssetManifest.json": "60af457e815e56ef3e07be8929823247",
+const RESOURCES = {"assets/AssetManifest.bin": "89ca773e4765c5076d7903dd0917c7c3",
+"assets/AssetManifest.json": "e2ad58b1007cc8dad3320e00cf0c7394",
 "assets/assets/chest.jpg": "26a1a44602636c16d89078b76c271546",
 "assets/assets/dialog01.gif": "6455e13862adecf809f4d8780ddc02c1",
 "assets/assets/dialog02.gif": "746a05c9de2914eaec9ddc4345d75c22",
@@ -20,6 +20,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "2ef310adab159aa58a1e0dc22485ff16
 "assets/assets/suitcase.jpg": "819c8271e04b0d75aa7e226d952e4c94",
 "assets/assets/unity01.webp": "768ba84ec156e174f163868142d0c835",
 "assets/assets/unity02.webp": "3b05dc589e49254120d5b89ba0cdd27f",
+"assets/assets/vectors.jpg": "8909fa35d2e3b2328f6e734f5643ea00",
 "assets/assets/world01.webp": "7bc1684453626c96c71a156b915bf6f8",
 "assets/assets/world02.jpg": "ab139f7cd32d465f5d0e6e4f10ec518a",
 "assets/assets/xmas01.webp": "24784629329bea77316c8972f8db1f6a",
@@ -43,9 +44,9 @@ const RESOURCES = {"assets/AssetManifest.bin": "2ef310adab159aa58a1e0dc22485ff16
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "e8d66fb7721192984d1f06775ff39f25",
-"/": "e8d66fb7721192984d1f06775ff39f25",
-"main.dart.js": "d50e023cb3142156a8f01bf71f7ccbb9",
+"index.html": "9520aae1bbfcd3922632de6b3efc7792",
+"/": "9520aae1bbfcd3922632de6b3efc7792",
+"main.dart.js": "77c5ea7038858f07e71caaeeb3ac5b6b",
 "manifest.json": "e74af8957b5899dc6da961caee768ec9",
 "version.json": "009c9e65172e010890f7f65fde438006"};
 // The application shell files that are downloaded before a service worker can
