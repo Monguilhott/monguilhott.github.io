@@ -29,7 +29,7 @@ class MyDesktopBodyState extends State<MyDesktopBody> {
         scrollController.animateTo(3860, duration: const Duration(seconds: 1), curve: Curves.easeInOut);
         break;
       case 'unity3d':
-        scrollController.animateTo(6000, duration: const Duration(seconds: 1), curve: Curves.easeInOut);
+        scrollController.animateTo(6200, duration: const Duration(seconds: 1), curve: Curves.easeInOut);
         break;
     }
   }
@@ -285,7 +285,7 @@ class MyDesktopBodyState extends State<MyDesktopBody> {
                       const Padding(
                         padding: EdgeInsets.only(top: 4.0, bottom: 8.0),
                         child: Text(
-                          '3D assets created in Blender.',
+                          'Assets created in Blender, Substance Painter and Marmoset Toolbag.',
                           style: TextStyle(
                             color: Colors.white54,
                             fontSize: 16,
@@ -294,6 +294,14 @@ class MyDesktopBodyState extends State<MyDesktopBody> {
                       ),
                       Column(
                         children: [
+                          Padding(
+                              padding: const EdgeInsets.only(top: 8.0),
+                              child: Image.asset('assets/tbrender_Viewport_001.png',)
+                          ),
+                          Padding(
+                              padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
+                              child: Image.asset('assets/tbrender_Viewport_002.png',)
+                          ),
                           Row(
                             children: [
                               Expanded(
@@ -328,10 +336,6 @@ class MyDesktopBodyState extends State<MyDesktopBody> {
                           Padding(
                             padding: const EdgeInsets.only(top: 8.0),
                             child: Image.asset('assets/chest.jpg',)
-                          ),
-                          Padding(
-                              padding: const EdgeInsets.only(top: 8.0),
-                              child: Image.asset('assets/snooker.gif',)
                           ),
                           const SizedBox(height: 48),
                         ],
