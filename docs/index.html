@@ -208,6 +208,9 @@
     .gallery figcaption b { display: block; overflow: hidden; text-overflow: ellipsis; color: var(--text); font-size: 14px; margin-bottom: 2px; }
 
     /* Lightbox */
+    .cv-links { display: flex; justify-content: center; align-items: center; gap: 8px; margin-top: 20px; color: var(--muted); font-size: 14px; }
+    .cv-links span { margin-right: 4px; }
+    .btn-sm { padding: 6px 14px; font-size: 13px; }
     .toast {
       position: fixed; left: 50%; bottom: 24px; z-index: 60;
       transform: translate(-50%, 16px); opacity: 0; pointer-events: none;
@@ -550,10 +553,14 @@
     <p class="lead">Based in Florianópolis, Brazil · Professional working English · Open to remote roles.</p>
     <div class="hero-actions">
       <a class="btn btn-primary" href="mailto:m.monguilhott@gmail.com">m.monguilhott@gmail.com</a>
-      <a class="btn" href="curriculo-mauricio-monguilhott.pdf" download="Curriculo-Mauricio-Monguilhott.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>Download CV</a>
       <a class="btn" href="https://www.linkedin.com/in/mauriciomonguilhott/" target="_blank" rel="noopener">LinkedIn ↗</a>
       <a class="btn" href="https://www.artstation.com/mauriciomonguilhott" target="_blank" rel="noopener">ArtStation ↗</a>
       <a class="btn" href="https://github.com/Monguilhott" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+    <div class="cv-links">
+      <span>Download CV</span>
+      <a class="btn btn-sm" href="resume-mauricio-monguilhott-en.pdf" download="Resume-Mauricio-Monguilhott-EN.pdf">EN</a>
+      <a class="btn btn-sm" href="curriculo-mauricio-monguilhott.pdf" download="Curriculo-Mauricio-Monguilhott-PT-BR.pdf">PT-BR</a>
     </div>
   </div>
 </section>
