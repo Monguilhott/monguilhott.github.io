@@ -149,13 +149,20 @@
     .project .links .btn { padding: 9px 16px; font-size: 14px; }
 
     /* Experience */
-    .timeline { margin-top: 48px; border-left: 2px solid var(--line); padding-left: 32px; display: grid; gap: 40px; }
+    .timeline { --gap: 40px; --x: -31px; margin-top: 48px; padding-left: 32px; display: grid; gap: var(--gap); }
     .job { position: relative; }
+    /* Dot centered on the line; the line runs from this dot to the next one. */
     .job::before {
-      content: ""; position: absolute; left: -41px; top: 6px;
+      content: ""; position: absolute; z-index: 1; left: calc(var(--x) - 8px); top: 6px;
       width: 16px; height: 16px; border-radius: 50%;
       background: var(--bg); border: 3px solid var(--accent-2);
     }
+    .job::after {
+      content: ""; position: absolute; left: calc(var(--x) - 1px); width: 2px;
+      top: 14px; bottom: calc(-1 * var(--gap) - 14px);
+      background: var(--line);
+    }
+    .job:last-child::after { display: none; }
     .job.current::before { border-color: var(--accent); background: var(--accent); }
     .job h3 { font-size: 20px; font-weight: 700; }
     .job h3 small { color: var(--muted); font-weight: 500; font-size: 16px; }
@@ -173,7 +180,7 @@
 
     /* Skills */
     #skills { background: var(--bg-2); }
-    .skills { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 48px; }
+    .skills { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 48px; }
     .skill { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; }
     .skill h3 { font-size: 17px; margin-bottom: 14px; }
     .skill .tags .tag { background: rgba(255, 181, 71, .1); color: #ffd394; }
@@ -221,8 +228,7 @@
       section { padding: 72px 0; }
       .hero { padding-top: 64px; }
       .stat b { font-size: 28px; }
-      .timeline { padding-left: 24px; }
-      .job::before { left: -33px; }
+      .timeline { padding-left: 24px; --x: -23px; }
     }
   </style>
 </head>
@@ -267,7 +273,7 @@
       <div class="stat"><b>10+</b><span>years in the games industry</span></div>
       <div class="stat"><b>5+</b><span>shipped titles featured here</span></div>
       <div class="stat"><b>2M+</b><span>downloads across featured games</span></div>
-      <div class="stat"><b>2D · 3D · UI</b><span>full pipeline into Unity</span></div>
+      <div class="stat"><b>2D · 3D · UI</b><span>full pipeline into Unity &amp; Godot</span></div>
     </div>
   </div>
 </header>
@@ -446,7 +452,7 @@
     <h2>What I bring to a team</h2>
     <div class="skills">
       <div class="skill">
-        <h3>UI/UX for games</h3>
+        <h3>UI/UX</h3>
         <div class="tags"><span class="tag">Wireframes</span><span class="tag">Prototyping</span><span class="tag">Usability testing</span><span class="tag">User research</span><span class="tag">Mobile UX</span><span class="tag">Figma</span></div>
       </div>
       <div class="skill">
@@ -455,7 +461,11 @@
       </div>
       <div class="skill">
         <h3>Art &amp; motion</h3>
-        <div class="tags"><span class="tag">Illustrator</span><span class="tag">Photoshop</span><span class="tag">Animate</span><span class="tag">Blender</span><span class="tag">Substance Painter</span><span class="tag">Marmoset</span><span class="tag">Pixel art</span></div>
+        <div class="tags"><span class="tag">Adobe Creative Suite</span><span class="tag">Illustrator</span><span class="tag">Photoshop</span><span class="tag">Animate</span><span class="tag">Blender</span><span class="tag">Substance Painter</span><span class="tag">Marmoset</span><span class="tag">Pixel art</span></div>
+      </div>
+      <div class="skill">
+        <h3>AI tools</h3>
+        <div class="tags"><span class="tag">Claude Code</span><span class="tag">Codex</span><span class="tag">ChatGPT</span><span class="tag">Gemini</span></div>
       </div>
     </div>
   </div>
