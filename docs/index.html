@@ -199,8 +199,12 @@
       background: var(--card); border: 1px solid var(--line); cursor: zoom-in;
     }
     .gallery figure.hide { display: none; }
+    /* Row-ordered masonry, set up by the script below; plain columns without JS. */
+    .gallery.masonry { columns: auto; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); grid-auto-rows: 1px; column-gap: 16px; }
+    .gallery.masonry figure { margin-bottom: 0; align-self: start; }
     .gallery figcaption { padding: 10px 14px; font-size: 13px; color: var(--muted); }
-    .gallery figcaption b { display: block; color: var(--text); font-size: 14px; margin-bottom: 2px; }
+    .gallery figcaption { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .gallery figcaption b { display: block; overflow: hidden; text-overflow: ellipsis; color: var(--text); font-size: 14px; margin-bottom: 2px; }
 
     /* Lightbox */
     .lightbox {
@@ -489,7 +493,15 @@
       <figure data-c="ui"><img loading="lazy" src="img/xmas01.webp" alt="Christmas splash screen"><figcaption>Christmas splash · GameVelvet · Illustrator + Animate</figcaption></figure>
       <figure data-c="ui"><img loading="lazy" src="img/dialog01.gif" alt="Animated dialog"><figcaption>Dialog animation · GameVelvet</figcaption></figure>
       <figure data-c="ui"><img loading="lazy" src="img/world01.webp" alt="World Cup splash screen"><figcaption>World Cup 2022 splash · GameVelvet</figcaption></figure>
-      <figure data-c="3d"><img loading="lazy" src="img/tbrender_Viewport_001.png" alt="3D render"><figcaption>3D asset · Blender + Substance + Marmoset</figcaption></figure>
+      <figure data-c="3d"><img loading="lazy" src="img/3d/pistol-01.jpg" alt="3D pistol render"><figcaption><b>Pistol · Glock 17</b>Blender · Substance · Marmoset</figcaption></figure>
+      <figure data-c="3d"><img loading="lazy" src="img/3d/pistol-02.jpg" alt="3D pistol held in gloved hands"><figcaption><b>Pistol · Glock 17</b>Hands pose render</figcaption></figure>
+      <figure data-c="3d"><img loading="lazy" src="img/3d/pistol-fps.jpg" alt="First-person view of the pistol in an alley"><figcaption><b>Pistol · Glock 17</b>First-person in-game view</figcaption></figure>
+      <figure data-c="3d"><img loading="lazy" src="img/3d/knife-01.jpg" alt="3D combat knife render, two angles"><figcaption><b>Combat knife</b>PBR texturing, two angles</figcaption></figure>
+      <figure data-c="3d"><img loading="lazy" src="img/3d/knife-02.jpg" alt="3D combat knife wireframe"><figcaption><b>Combat knife</b>Wireframe / topology</figcaption></figure>
+      <figure data-c="3d"><img loading="lazy" src="img/3d/knife-03.jpg" alt="3D combat knife close-up"><figcaption><b>Combat knife</b>Close-up render</figcaption></figure>
+      <figure data-c="3d"><img loading="lazy" src="img/3d/knife-04.jpg" alt="First-person view holding the knife"><figcaption><b>Combat knife</b>First-person in-game view</figcaption></figure>
+      <figure data-c="3d"><img loading="lazy" src="img/3d/ammo-01.jpg" alt="3D 9mm ammo boxes and bullets"><figcaption><b>9mm ammo box</b>Props render</figcaption></figure>
+      <figure data-c="3d"><img loading="lazy" src="img/3d/ammo-02.jpg" alt="3D ammo boxes wireframe"><figcaption><b>9mm ammo box</b>Wireframe / topology</figcaption></figure>
       <figure data-c="ui"><img loading="lazy" src="img/dialog02.gif" alt="Animated dialog"><figcaption>Dialog animation · GameVelvet</figcaption></figure>
       <figure data-c="2d"><img loading="lazy" src="img/harry.jpg" alt="Illustration"><figcaption>Illustration · Photoshop</figcaption></figure>
       <figure data-c="ui"><img loading="lazy" src="img/xmas02.jpg" alt="Christmas splash screen"><figcaption>Christmas splash · GameVelvet</figcaption></figure>
@@ -499,7 +511,6 @@
       <figure data-c="3d"><img loading="lazy" src="img/packs.webp" alt="3D packs"><figcaption>3D in-game packs</figcaption></figure>
       <figure data-c="2d"><img loading="lazy" src="img/girl01.jpg" alt="Illustration"><figcaption>Illustration</figcaption></figure>
       <figure data-c="ui"><img loading="lazy" src="img/world02.jpg" alt="World Cup splash screen"><figcaption>World Cup 2022 splash · GameVelvet</figcaption></figure>
-      <figure data-c="3d"><img loading="lazy" src="img/tbrender_Viewport_002.png" alt="3D render"><figcaption>3D asset</figcaption></figure>
       <figure data-c="2d"><img loading="lazy" src="img/sketch.jpg" alt="Sketch"><figcaption>Sketch</figcaption></figure>
       <figure data-c="3d"><img loading="lazy" src="img/suitcase.jpg" alt="3D suitcase"><figcaption>3D prop</figcaption></figure>
       <figure data-c="unity"><img loading="lazy" src="img/unity02.webp" alt="VR prototype environment in the Unity editor"><figcaption><b>VR prototype · Unity editor</b>3D environment, lighting and scene setup for the same VR test.</figcaption></figure>
@@ -529,11 +540,22 @@
 <div class="lightbox" id="lb"><img alt=""></div>
 
 <script>
-  const figs = document.querySelectorAll('.gallery figure');
+  const gallery = document.querySelector('.gallery');
+  const figs = gallery.querySelectorAll('figure');
+  // Each figure spans as many 1px rows as its height plus the 16px gap,
+  // so items flow left to right in the order they appear in the HTML.
+  const layout = () => figs.forEach(f => {
+    f.style.gridRowEnd = 'span ' + Math.ceil(f.getBoundingClientRect().height + 16);
+  });
+  gallery.classList.add('masonry');
+  figs.forEach(f => f.querySelector('img').addEventListener('load', layout));
+  addEventListener('resize', layout);
+  layout();
   document.querySelectorAll('.filters button').forEach(b => {
     b.addEventListener('click', () => {
       document.querySelectorAll('.filters button').forEach(x => x.classList.toggle('on', x === b));
       figs.forEach(f => f.classList.toggle('hide', b.dataset.f !== 'all' && f.dataset.c !== b.dataset.f));
+      layout();
     });
   });
   const lb = document.getElementById('lb');
